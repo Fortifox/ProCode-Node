@@ -1,0 +1,68 @@
+.main {
+  height: 95vh;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50fr 150rf 100fr 50px;
+      grid-template-rows: 50fr 150rf 100fr 50px;
+}
+
+.main div {
+  border: 1px solid black;
+}
+
+.gridflow {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 1fr;
+      grid-template-columns: 200px 1fr;
+}
+
+.grids {
+  max-height: 150px;
+  overflow-y: scroll;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "i3 ." "i3 i4" "i5 i4" "i5 i6" ". i6";
+}
+
+.item3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: i3;
+}
+
+.item4 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: i4;
+}
+
+.item5 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: i5;
+}
+
+.item6 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: i6;
+}
+
+.item10-11 {
+  bottom: 100px;
+}
+
+.item12 {
+  background-color: #fadc59;
+}
+/*# sourceMappingURL=main.css.map */
